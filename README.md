@@ -161,4 +161,47 @@ RAPID_PURCHASE_MINUTES = 10        # Minimum minutes between purchases
 - **Fraud Detection**: Automatic flagging of suspicious patterns
 - **Audit Trail**: Complete timestamp and student information for accountability
 
-## �
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**ImportError: cannot import name 'DataHandler'**
+- Ensure `data_handler.py` exists in the same directory
+- Check that the file contains the complete DataHandler class
+
+**Student not found in database**
+- Verify student exists in `students.db` using SQLite viewer
+- Check matric number format matches exactly (including slashes, spaces)
+
+**Database locked error**
+- Close any SQLite viewers accessing the database files
+- Ensure only one instance of the logger is running
+
+## 📊 Future Enhancements
+
+- [ ] Excel export functionality for daily reports
+- [ ] Email alerts for suspicious transactions
+- [ ] Payment reference number tracking
+- [ ] Multi-user access control
+- [ ] Real-time bank API integration
+- [ ] Mobile app version
+
+## 👥 Contributors
+
+- **Your Name** - Data validation and fraud detection logic
+- **Friend's Name** - GUI development
+
+## 📝 License
+
+This project is developed for educational purposes as part of a university cafeteria management system.
+
+## 📧 Support
+
+For issues or questions, please contact:
+- Email: oloriiresamuel1@gmail.com
+- Email: nueltajart@gmail.com
+- Department: Computer Engineering
+
+---
+
+**Note**: This system is designed for internal use within the cafeteria. Always protect student data and maintain confidentiality of transaction records.
